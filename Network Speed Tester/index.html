@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Speed Tester</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <video autoplay muted loop id="backgroundVideo">
+    <source src="./fire.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <div class="content">
+    <header>
+      <h1>Network Speed Tester</h1>
+    </header>
+    <main>
+      <section class="test-section">
+        <button id="startTest">Start Speed Test</button>
+      </section>
+      <section class="results">
+        <h2>Speed Test Results</h2>
+        <div class="chart-container">
+          <canvas id="speedChart"></canvas>
+        </div>
+        <div class="summary">
+          <p><strong>Download Speed:</strong> <span id="downloadSpeed">0</span> Mbps</p>
+          <p><strong>Upload Speed:</strong> <span id="uploadSpeed">0</span> Mbps</p>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
